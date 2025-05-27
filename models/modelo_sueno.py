@@ -14,3 +14,14 @@ class SleepAnalyzer:
             if d['sleep_quality'] < 50 or d['awake_count'] > 3:
                 issues.append((d['date'], d['sleep_quality'], d['awake_count']))
         return issues
+
+class AdvancedSleepAnalyzer(SleepAnalyzer):
+    def detect_problems(self):
+        # Llamamos al método base (opcional)
+        base_issues = super().detect_problems()
+        # Agregamos un criterio adicional
+        extra_issues = []
+        for d in self.sleep_data:
+            if d['deep_pct'] < 15 or d['rem_pct'] < 20:
+                extra_issues.append((d['date'], "Sueño profundo o REM bajo"))
+        return base_issues + extra_issues

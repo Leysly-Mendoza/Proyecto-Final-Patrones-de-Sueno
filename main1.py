@@ -3,6 +3,7 @@ from process.functional_tools import filter_low_quality, average_deep_sleep
 from utils.recomendador import generate_recommendation
 import asyncio
 from entrada_real.analisis_async import simulate_real_time_input
+from models.modelo_sueno import AdvancedSleepAnalyzer 
 
 # Simulación de dataset cargado
 data = [
@@ -10,7 +11,7 @@ data = [
     {'user_id': 'u01', 'date': '2025-05-02', 'total_sleep_hours': 7.2, 'deep_pct': 20, 'rem_pct': 22, 'light_pct': 48, 'awake_count': 2, 'sleep_quality': 65},
 ]
 
-session = SleepAnalyzer("u01", data)
+session = AdvancedSleepAnalyzer("u01", data)
 print("Horas promedio de sueño:", session.average_sleep_hours())
 print("Problemas detectados:", session.detect_problems())
 
