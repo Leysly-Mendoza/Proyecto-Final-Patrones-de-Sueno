@@ -19,7 +19,6 @@ Aplicar los paradigmas de programación (orientado a objetos, funcional, y concu
 * functools
 * itertools
 * pandas
-* numpy
 * tkinter
 
 ## Estructura del Proyecto
@@ -35,7 +34,6 @@ Aplicar los paradigmas de programación (orientado a objetos, funcional, y concu
 
 * Análisis de patrones de sueño utilizando datos recolectados del usuario.
 * Generación de recomendaciones personalizadas basadas en análisis funcionales y concurrentes.
-* Visualización de gráficas de sueño con matplotlib.
 * Interfaz gráfica intuitiva con Tkinter.
 
 ### 🔧 Instalación
@@ -50,7 +48,7 @@ cd Proyecto-Final-Patrones-de-Sueno
 2. Instala las dependencias:
 
 ```bash
-pip install pandas numpy 
+pip install pandas
 ```
 
 3. Ejecuta el programa desde consola:
