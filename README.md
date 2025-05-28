@@ -65,10 +65,9 @@ python gui.py
 
 ## Uso
 
-1. Ingresa tus datos de patrones de sueño o importa un archivo CSV.
+1. Dataset, archivo CSV que contiene datos del usuario sobre su sueño.
 2. El sistema analizará automáticamente los datos usando programación funcional y concurrente.
 3. Se generarán recomendaciones para mejorar tu calidad de sueño.
-4. Puedes ver gráficas y resultados desde la interfaz gráfica o en consola.
 
 ## Licencia
 
